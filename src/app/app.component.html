@@ -1,0 +1,121 @@
+<!-- string interpolation-->
+<!--{{name}}!-->
+            <!-- property Binding !-->
+        <!--<button [disabled] = "afficher">Bouton</button>!-->
+        <!-- <button [disabled] = "!show">Bouton</button> !-->
+
+            <!--Event Binding! -->
+        <!--<p>
+            <button (click) = "afficher()" style="color:black;">Bouton</button>
+        </p>!-->
+            <!-- Two way Binding !-->
+       <!--<p>
+            <label>Nom : {{ name }}</label>
+            <input type="text" [(ngModel)]="name"> 
+        </p>!-->
+        <!--<table class="calculatrice" id="calc" align="center">
+            <tr>
+                <td colspan="4" class="calc_td_resultat">
+                    <input type="text" readonly="readonly" name="calc_resultat" id="calc_resultat" class="calc_resultat" onkeydown="javascript:key_detect_calc('calc',event);" />
+                </td>
+            </tr>
+            <tr>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="CE" onclick="javascript:f_calc('calc','ce');" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="&larr;" onclick="javascript:f_calc('calc','nbs');" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="%" onclick="javascript:f_calc('calc','%');" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="+" onclick="javascript:f_calc('calc','+');" />
+                </td>
+            </tr>
+            <tr>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="7" onclick="javascript:add_calc('calc',7);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="8" onclick="javascript:add_calc('calc',8);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="9" onclick="javascript:add_calc('calc',9);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="-" onclick="javascript:f_calc('calc','-');" />
+                </td>
+            </tr>
+                        <tr>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="4" onclick="javascript:add_calc('calc',4);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="5" onclick="javascript:add_calc('calc',5);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="6" onclick="javascript:add_calc('calc',6);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="x" onclick="javascript:f_calc('calc','*');" />
+                </td>
+            </tr>
+            <tr>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="1" onclick="javascript:add_calc('calc',1);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="2" onclick="javascript:add_calc('calc',2);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="3" onclick="javascript:add_calc('calc',3);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="&divide;" onclick="javascript:f_calc('calc','');" />
+                </td>
+            </tr>
+            <tr>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="0" onclick="javascript:add_calc('calc',0);" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="&plusmn;" onclick="javascript:f_calc('calc','+-');" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="," onclick="javascript:add_calc('calc','.');" />
+                </td>
+                <td class="calc_td_btn">
+                        <input type="button" class="calc_btn" value="=" onclick="javascript:f_calc('calc','=');" />
+                </td>
+            </tr>
+        </table>!-->
+        <div align="center">
+            <p>
+                <label>Nombre 1 : </label>
+                <input type="number" [(ngModel)] = "nbr1"><br>
+            </p>
+            <p>
+                <label>Nombre 2 : </label>
+                <input type="number" [(ngModel)] = "nbr2"><br>
+            </p>
+                <span>
+                    <button type="button" (click) = " addition() ">+</button>
+                </span>
+                <span>
+                   <button type="button" (click) = " soustraction() ">-</button> 
+                </span>
+                <span>
+                   <button type="button" (click) = " multiplication() ">*</button> 
+                </span>
+                <span>
+                    <button type="button" (click) = " division()">/</button>
+                </span>
+            <p>
+            Résultat : {{result}}
+            </p>
+        </div>
+        
+            
+       
+        
